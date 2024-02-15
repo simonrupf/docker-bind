@@ -1,6 +1,6 @@
 ### ISC BIND9 Container (Stable: 9.18.xx) built on top of Alpine
-### Last update: 17-12-23
-### Latest Stable Docker Tag: 9.18.19-r1
+### Last update: 15-02-24
+### Latest Stable Docker Tag: 9.18.24-r1
 
 NOTE: "Last Update" is the date of the latest DockerHub build.
 
@@ -160,7 +160,7 @@ For more information, see: https://www.slideshare.net/MenandMice/bind-9-logging-
 
 There is now a "BIND_LOG" ENV (environment) variable for logging
 
-Environment variables can both have a default and be customized at run time. 
+Environment variables can both have a default and be customized at run time.
 
 ```
 "-g" = (default) Run the server in the foreground and force all logging stderr.
@@ -169,5 +169,3 @@ Environment variables can both have a default and be customized at run time.
 
 By default, the "-g" value is set, as that logs all to STDERR.
 You can now override it with "-f" by passing `-e "BIND_LOG=-f"` to `docker run`
-
-
